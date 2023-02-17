@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<h1>Welcome to my Portfolio</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>I'm <span class ="auto-input"></span></h1>
+			<p>Here you will find all of my projects. How can I help you ?</p>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h2>About Me</h2>
+			<p>I am an Engineering student pursuing BTech in Computer Science Engineering from Dr Sudhir chandra Sur Institute of Technology, which is under Makaut University.I am a flexible learner and perseverant in achieving my goals, passionate about programming. I love collaborating and making connections and want to learn new skills..</p>
+			<p>
+				Skills : C/C++,HTML,CSS
+			</p>
+		</div>
+	</section>
+
+	<section id="portfolio">
+		<div class="container">
+			<h2>My Projects</h2>
+			<div class="portfolio-item">
+				<img src="portfolio1.jpg">
+				<h3>Project 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="portfolio-item">
+				<img src="portfolio2.jpg">
+				<h3>Project 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="portfolio-item">
+				<img src="portfolio3.jpg">
+				<h3>Project 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="portfolio-item">
+				<img src="portfolio4.jpg">
+				<h3>Project 4</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<form>
+				<label>Name</label>
+				<input type="text" placeholder="Enter your name">
+				<label>Email</label>
+				<input type="email" placeholder="Enter your email">
+				<label>Message</label>
+				<textarea placeholder="Enter your message"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>Copyright &copy; My Portfolio</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		var typed = new Typed(".auto-input",{strings:["Soumik Chakraborty","a Developer","an Engineer"],
+		typeSpeed: 150,
+		backspeed: 100,
+		loop: true
+	})
+	</script>
+</body>
+</html>
