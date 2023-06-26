@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-	<script src = "script.js"></script>
+	<script src="script.js"></script>
 	<header>
-		<div class="container">
+		<div id = "home" class="container">
 			<h1>Welcome to my Portfolio</h1>
 			<nav>
 				<ul>
-					<li id ="upper-right1"><a href="#">Home</a></li>
-					<li id ="upper-right2"><a href="#">About</a></li>
-					<li id ="upper-right3"><a href="#">Portfolio</a></li>
-					<li id ="upper-right4"><a href="#">Contact</a></li>
+					<li id="upper-right1"><a href="#home" onClick="document.getElementById('home').scrollIntoView();">Home</a></li>
+					<li id="upper-right2"><a href="#dynamic-text" onClick="document.getElementById('dynamic-text').scrollIntoView();">About</a></li>
+					<li id="upper-right3"><a href="#portfolio" onClick="document.getElementById('portfolio').scrollIntoView();">Projects</a></li>
+					<li id="upper-right4"><a href="#contact" onClick="document.getElementById('contact').scrollIntoView();">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -23,21 +25,24 @@
 
 	<section id="showcase" class="pv">
 		<div class="container">
-			<h1>I'm <span class ="auto-input"></span></h1>
+			<h1>I'm <span class="auto-input"></span></h1>
 			<p>Here you will find all of my projects. How can I help you ?</p>
 		</div>
 		<div class="center">
-			<button class = "l-b">Download CV</button>
-		  </div>
+			<button class="l-b">Download CV</button>
+		</div>
 	</section>
 	<div class="faded-text">
 		<h1 id="dynamic-text">Soumik Chakraborty</h1>
 		<!-- <p>This is an example of faded text.</p> -->
-	  </div>
+	</div>
 	<section id="about">
 		<div class="container">
 			<h2>About Me</h2>
-			<p>I am an Engineering student pursuing BTech in Computer Science Engineering from Dr Sudhir chandra Sur Institute of Technology, which is under Makaut University.I am a flexible learner and perseverant in achieving my goals, passionate about programming. I love collaborating and making connections and want to learn new skills..</p>
+			<p>I am an Engineering student pursuing BTech in Computer Science Engineering from Dr Sudhir chandra Sur
+				Institute of Technology, which is under Makaut University.I am a flexible learner and perseverant in
+				achieving my goals, passionate about programming. I love collaborating and making connections and want
+				to learn new skills..</p>
 			<p>
 				Skills : C/C++,HTML,CSS
 			</p>
@@ -92,11 +97,13 @@
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script>
-		var typed = new Typed(".auto-input",{strings:["Soumik Chakraborty","a Developer","an Engineer"],
-		typeSpeed: 150,
-		backspeed: 100,
-		loop: true
-	})
+		var typed = new Typed(".auto-input", {
+			strings: ["Soumik Chakraborty", "a Developer", "an Engineer"],
+			typeSpeed: 150,
+			backspeed: 100,
+			loop: true
+		})
 	</script>
 </body>
+
 </html>

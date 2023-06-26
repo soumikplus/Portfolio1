@@ -116,6 +116,7 @@ header ul li a {
 
 #portfolio {
 	padding: 50px 0;
+	margin-bottom: 0px;
 }
 
 #portfolio h2 {
@@ -147,12 +148,14 @@ header ul li a {
 }
 
 #contact {
-	padding: 50px 0;
+	padding: 25px 0;
+	margin-top: 0%;
 }
 
 #contact h2 {
 	font-size: 3em;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	margin-top: 0%;
 }
 
 form label {
@@ -234,5 +237,9 @@ footer {
 	  /* @media (max-width: 600px) {
 		.faded-text h1 {
 		  font-size: 80%; /* Adjust the font size as needed */
-		}
-	  } */
+		
+		  html {
+			scroll-behavior: smooth;
+		   }
+		   
+		   
